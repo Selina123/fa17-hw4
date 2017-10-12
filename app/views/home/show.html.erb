@@ -1,0 +1,23 @@
+<div>
+  <h2>Fa17 Homework 4</h2>
+  <h4>Cats</h4>
+  <h3>
+    <% @cats.each do |cat| %>
+    	<%= cat.name %>
+    <% end %>
+  </h3>
+  <h4>Todos</h4>
+  <h3>
+    <%= form_for :todo do |f| %>
+
+    <% end %>
+  </h3>
+  <h4>Users</h4>
+  <h3>
+    <% @users.each do |user| %>
+    	<%= user.username %>
+    	<%= user.email %>
+    	<%= user.age %>
+    <% end %>
+  </h3>
+</div>
